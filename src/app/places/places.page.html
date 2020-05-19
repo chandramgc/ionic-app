@@ -1,0 +1,37 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="discover">
+        <ion-icon name="bulb-outline"></ion-icon>
+        <ion-label>Discover</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="offers">
+        <ion-icon name="pricetags-outline"></ion-icon>
+        <ion-label>Offers</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="uploader">
+        <ion-icon name="image-outline"></ion-icon>
+        <ion-label>Upload</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button (click)="onOpenMenu()">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-label>Menu</ion-label>
+        <!--         <ion-menu-button menuId='m1'>
+          <ion-icon name="menu-outline"></ion-icon>
+        </ion-menu-button> -->
+
+      </ion-tab-button>
+    </ion-tab-bar>
+
+  </ion-tabs>
+
+
+</ion-content>
