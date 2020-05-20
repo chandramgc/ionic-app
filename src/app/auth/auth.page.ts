@@ -72,12 +72,14 @@ export class AuthPage implements OnInit {
     const password = form.value.password;
 
     this.authenticate(email, password);
+    form.reset();
   }
 
   private showAlert(message: string) {
     this.alertCtrl
       .create({
         header: 'Authentication failed',
+        // tslint:disable-next-line: object-literal-shorthand
         message: message,
         buttons: ['Okay']
       })
