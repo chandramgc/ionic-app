@@ -60,7 +60,7 @@ exports.storeImage = functions.https.onRequest((req, res) => {
         .then(decodedToken => {
           console.log(uploadData.type);
           return storage
-            .bucket('YOUR_FIREBASE_PROJECT_ID.appspot.com')
+            .bucket('my-ionic-app-ccdfb.appspot.com')
             .upload(uploadData.filePath, {
               uploadType: 'media',
               destination: imagePath,
@@ -76,7 +76,7 @@ exports.storeImage = functions.https.onRequest((req, res) => {
           return res.status(201).json({
             imageUrl:
               'https://firebasestorage.googleapis.com/v0/b/' +
-              storage.bucket('YOUR_FIREBASE_PROJECT_ID.appspot.com').name +
+              storage.bucket('my-ionic-app-ccdfb.appspot.com').name +
               '/o/' +
               encodeURIComponent(imagePath) +
               '?alt=media&token=' +
